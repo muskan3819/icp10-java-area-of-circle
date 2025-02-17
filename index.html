@@ -3,6 +3,9 @@
 <head>
     <title>area of Rectangle</title>
     <style>
+        body{
+            background-color: #f4cce9ea;
+        }
         .c1{
             display: flex;
             justify-content: center;
@@ -10,11 +13,13 @@
 
         }
         .c2{
-            border: 2px;
-            border-color: black;
+            border: 3px;
+            border-color:  #f8f7f7;
+            box-shadow: 15px 15px 15px #56021fdb;
             border-style: double;
             width: 500px;
             height: 350px;
+            background-color: #d45c94e0;
           
 
         }
@@ -27,20 +32,41 @@
         height: 25px;
         margin-left: 20px;
     }
+
+    .input:focus{
+        outline: none;
+    }
+    .btn{
+        width: 80px;
+        height: 45px;
+        border-radius: 10px;
+        transition-duration: .3s;
+        color:#fff;
+        background-color: #c43466f9;
+        font-size: 18px;
+    }
+    .btn:hover{
+        width: 80px;
+        height: 45px;
+        border-radius: 20px;
+        background-color: #fa5b93f9;
+
+
+    }
     </style>
 </head>
 <body>
     <div class="c1">
 
     <div class="c2">
-      <center> <b style="font-size: 28px; text-align: center;"> Area of the Rectangle ▭ </b><br><br>
-     <b style="font-size: 23px;margin-left: 20px;"> Length :-</b><br><br>
+      <center> <b style="font-size: 28px; text-align: center; color: #f8f7f7;"> Area of the Rectangle ▭ </b><br><br>
+     <b style="font-size: 23px;margin-left: 20px;  color: #f8f7f7;"> Length :-</b><br><br>
        <input type="number" id="input1" class="input"><br><br>
-      <b style="font-size: 23px; text-align: center; margin-left: 20px;"> Width :-</b><br><br>
+      <b style="font-size: 23px; text-align: center; margin-left: 20px;  color: #f8f7f7;"> Width :-</b><br><br>
        <input type="number" id="input2" class="input"><br>
-       <p id="result" style="font-size: 19px;">--</p><br>
-       <button onclick="reset()">reset</button>
-       <button onclick="mult()">Result</button>
+       <p id="result" style="font-size: 19px;  color: #f8f7f7;">--</p><br>
+       <button onclick="reset()" class="btn">Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button onclick="mult()" class="btn">Result</button>
     </center>
         </div>
         </div>
