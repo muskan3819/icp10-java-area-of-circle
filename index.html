@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>area of Rectangle</title>
+    <style>
+        .c1{
+            display: flex;
+            justify-content: center;
+             padding: 70px;
+
+        }
+        .c2{
+            border: 2px;
+            border-color: black;
+            border-style: double;
+            width: 500px;
+            height: 350px;
+          
+
+        }
+    .input{
+        border: 2px;
+            border-color: black;
+            border-style:groove;
+
+        width: 200px;
+        height: 25px;
+        margin-left: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="c1">
+
+    <div class="c2">
+      <center> <b style="font-size: 28px; text-align: center;"> Area of the Rectangle ▭ </b><br><br>
+     <b style="font-size: 23px;margin-left: 20px;"> Length :-</b><br><br>
+       <input type="number" id="input1" class="input"><br><br>
+      <b style="font-size: 23px; text-align: center; margin-left: 20px;"> Width :-</b><br><br>
+       <input type="number" id="input2" class="input"><br>
+       <p id="result" style="font-size: 19px;">--</p><br>
+       <button onclick="reset()">reset</button>
+       <button onclick="mult()">Result</button>
+    </center>
+        </div>
+        </div>
+        <!--java code-->
+        <script>
+              function mult(){
+                const input1Element =document.getElementById("input1");
+                const input2Element =document.getElementById("input2");
+                const resultElement =document.getElementById("result");
+
+                const num1=input1Element.value;    
+                const num2=input2Element.value;  
+                if(num1==""){
+                    alert("please enter first number");
+                    return;
+                }
+                if(num2==""){
+                    alert("please enter second number");
+                    return;
+                }
+
+
+                const total=
+                parseInt(input1Element.value)* parseInt(input2Element.value);
+                resultElement.innerText= `Area of Rectangle is: ${total}`;
+              }
+
+              function reset(){
+                const input1Element =document.getElementById("input1");
+                const input2Element =document.getElementById("input2");
+                const resultElement =document.getElementById("result");
+           
+                input1Element.value="";
+                input2Element.value="";
+                resultElement.innerText="--"
+
+              }
+          </script>
+</body>
+</html>
